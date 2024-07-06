@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>加法计算器</title>
+</head>
+<body>
+    <input type="number"  id="yi" >
+    <hr>
+    <input type="number"  id="er">
+    <hr> 
+     <button onclick="com()">计算</button>
+     <hr>
+     <input type="number" id="re">
+</body>
+<script>       
+        function com(){
+            let a= parseInt (document.getElementById('yi').value);
+            let b=parseInt (document.getElementById('er').value);
+            let c=a+b;
+            console.log(c);
+            document.getElementById('re').value=c;
+        }
+</script>
+</html>
