@@ -1,19 +1,48 @@
-#tittle{
-    text-align: center;
-    color: aqua;
+.box{
+  width: 100vw;
+  height: 100vh;
+  /* padding-top: 20.5%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;    
+  align-content:center;
+    .item1{
+      width: 100%;  
+      color: rgb(0, 17, 255); 
+      text-align: center;
+      font-size: clamp(0.063rem, -1.151rem + 6.07vw, 12.5rem);
+    }
+    .item2{
+      /* width:100%; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1 1 auto;
+      .input {
+        flex: .2 .1 1px;
+        background-color: #f2ebeb;
+        /* width: 10em; */
+        height: 5em; 
+        /* padding: 10px; */
+        text-align: center;
+        border: 2px solid white;
+        border-radius: 5px;
+        box-shadow: 3px 3px 2px rgb(85, 210, 255); 
+      }     
+    .output{
+      flex: .4 .1 2px;
+        background-color: #dcd9d9;
+        /* width: 20em;*/
+        height: 10em; 
+        /* padding: 20px; */
+        border-color:rgb(183, 18, 18) ;
+    }
+  } 
 }
 
-.input {
-    background-color: #f2ebeb;
-    max-width: 190px;
-    height: 40px;
-    padding: 10px;
-    /* text-align: center; */
-    border: 2px solid white;
-    border-radius: 5px;
-    /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
-  }
-  
+
+
   .input:focus {
     color: rgb(0, 255, 255);
     background-color: #212121;
@@ -23,7 +52,7 @@
     transition-property: box-shadow;
   }
 
-  /* 悬停添加箭头图标 */
+
   .niceButton5 {
     display: inline-block;
     border-radius: 20px;
@@ -47,7 +76,7 @@
     transition: 0.5s;
   }
   .niceButton5 span::after {
-    content: ">";
+    content: "  ";
     position: absolute;
     opacity: 0;
     top: 0;
