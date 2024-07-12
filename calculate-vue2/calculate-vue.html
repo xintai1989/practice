@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div id="app">
+    <input type="number" v-model="num1" >
+    +
+    <input type="number" v-model="num2">
+    =
+    <span>{{add}}</span>
+</div>
+
+<script src="./vue.js"></script>
+
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+           num1:'',
+           num2:'', 
+
+        },
+        methods: {
+ 
+        },
+        computed: {
+            add () {
+                let res=Number(this.num1)+Number(this.num2)
+                return res
+            }
+        }
+        
+    })
+</script>
+
+</body>
+</html>      
+       
